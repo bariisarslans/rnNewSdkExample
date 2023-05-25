@@ -6,6 +6,8 @@
 
 #import <React/RCTAppSetupUtils.h>
 
+@import react_native_related_digital
+
 #if RCT_NEW_ARCH_ENABLED
 #import <React/CoreModulesPlugins.h>
 #import <React/RCTCxxBridgeDelegate.h>
@@ -51,7 +53,20 @@ static NSString *const kRNConcurrentRoot = @"concurrentRoot";
   } else {
     rootView.backgroundColor = [UIColor whiteColor];
   }
-
+  
+  [[RelatedDigitalManager shared] initRelatedDigital:@"676D325830564761676D453D"
+                                        withProfileId:@"356467332F6533766975593D"
+                                       withDataSource:@"visistore"
+                                         withAppAlias:@"YOUR_APP_ALIAS"
+                           withEnablePushNotification:YES
+                                     withAppGroupsKey:@"group.org.reactjs.native.example.relateddigital"
+                                   withDeliveredBadge:YES
+                                   withEnableGeofence:NO
+                     withAskLocationPermissionAtStart:NO
+                                   withLoggingEnabled:YES
+                                    withLaunchOptions:launchOptions];
+  
+  
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   UIViewController *rootViewController = [UIViewController new];
   rootViewController.view = rootView;
@@ -89,6 +104,35 @@ static NSString *const kRNConcurrentRoot = @"concurrentRoot";
 #else
   return [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
 #endif
+}
+
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center
+       willPresentNotification:(UNNotification *)notification
+         withCompletionHandler:(void (^)(UNNotificationPresentationOptions options))completionHandler {
+  completionHandler(UNAuthorizationOptionSound | UNAuthorizationOptionAlert | UNAuthorizationOptionBadge);
+  [[RelatedDigitalManager shared] didReceiveRemoteNotification:notification];
+}
+
+- (void)application:(UIApplication *)application
+    didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+  [[RelatedDigitalManager shared] didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
+}
+
+- (void)application:(UIApplication *)application
+    didReceiveRemoteNotification:(nonnull NSDictionary *)userInfo
+          fetchCompletionHandler:(nonnull void (^)(UIBackgroundFetchResult))completionHandler {
+  [[RelatedDigitalManager shared] didReceiveRemoteNotification:userInfo fetchCompletionHandler:completionHandler];
+}
+
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center
+    didReceiveNotificationResponse:(UNNotificationResponse *)response
+             withCompletionHandler:(void (^)(void))completionHandler {
+  [[RelatedDigitalManager shared] didReceiveNotificationResponse:response withCompletionHandler:completionHandler];
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error
+{
+  NSLog(@"didFailToRegisterForRemoteNotificationsWithError %@", error.description );
 }
 
 #if RCT_NEW_ARCH_ENABLED

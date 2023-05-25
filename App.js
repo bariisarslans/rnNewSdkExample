@@ -140,7 +140,7 @@ function App() {
           <Button title="Get Push Messages" onPress={handleGetPushMessages} />
         </View>
         <View style={styles.button}>
-          <Button title="Custom Event" onPress={()=>RelatedDigital.customEvent("Home", {"OM.inapptype":"halfscreen"})} />
+          <Button title="Custom Event" onPress={()=>RelatedDigital.customEvent("Home", {"OM.inapptype":"nps_with_numbers"})} />
         </View>
       </ScrollView>
     </SafeAreaView>

@@ -284,6 +284,9 @@ PODS:
   - React-jsinspector (0.69.0)
   - React-logger (0.69.0):
     - glog
+  - react-native-related-digital (1.6.0):
+    - React-Core
+    - RelatedDigitalIOS (= 4.0.16)
   - React-perflogger (0.69.0)
   - React-RCTActionSheet (0.69.0):
     - React-Core/RCTActionSheetHeaders (= 0.69.0)
@@ -350,6 +353,9 @@ PODS:
     - React-jsi (= 0.69.0)
     - React-logger (= 0.69.0)
     - React-perflogger (= 0.69.0)
+  - RelatedDigitalIOS (4.0.16)
+  - RNCAsyncStorage (1.18.1):
+    - React-Core
   - SocketRocket (0.6.0)
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
@@ -399,6 +405,7 @@ DEPENDENCIES:
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
+  - react-native-related-digital (from `../node_modules/react-native-related-digital`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
@@ -411,6 +418,8 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - React-runtimeexecutor (from `../node_modules/react-native/ReactCommon/runtimeexecutor`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - RelatedDigitalIOS (= 4.0.16)
+  - "RNCAsyncStorage (from `../node_modules/@react-native-async-storage/async-storage`)"
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -428,6 +437,7 @@ SPEC REPOS:
     - fmt
     - libevent
     - OpenSSL-Universal
+    - RelatedDigitalIOS
     - SocketRocket
     - YogaKit
 
@@ -470,6 +480,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
   React-logger:
     :path: "../node_modules/react-native/ReactCommon/logger"
+  react-native-related-digital:
+    :path: "../node_modules/react-native-related-digital"
   React-perflogger:
     :path: "../node_modules/react-native/ReactCommon/reactperflogger"
   React-RCTActionSheet:
@@ -494,6 +506,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/runtimeexecutor"
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  RNCAsyncStorage:
+    :path: "../node_modules/@react-native-async-storage/async-storage"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -530,6 +544,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: b2a049b9f156342f6037ccb0c8acf69f923d3089
   React-jsinspector: 6aced68014b275b7abd073c9598b0affd0e1669c
   React-logger: bcf33ce10afa135158c72635e621ddb94126c610
+  react-native-related-digital: 255467809604c270771065ac998b706733e1bc9f
   React-perflogger: aa48956d87bae67fc847acc196fae97928b96cd3
   React-RCTActionSheet: 4eaab2b885130ce9a88c8fdac5f1992315da80f6
   React-RCTAnimation: 5e91e3ceb988838fa43615bb602181be30d2b26e
@@ -542,10 +557,12 @@ SPEC CHECKSUMS:
   React-RCTVibration: 7549ef7b07aad1cc629f4c6d88c325366f26423c
   React-runtimeexecutor: 7ad268dee53d001697e13264c6bc8e95a902352e
   ReactCommon: 74a3b8ee497c6d50ce86ef57e15c4c5bf654b83d
+  RelatedDigitalIOS: 79d958feec228d7981067eeb288cf8a22e1444a5
+  RNCAsyncStorage: 138c9b908c5569e7e9f633df75aa71a089690a0c
   SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
   Yoga: 4935173923cabaa830e195be3e8e4cac045a8f90
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: c47df685bfb3cb8e36833348fe151ac3b8bac33e
+PODFILE CHECKSUM: adf52f57c6788d301e742cf26712333f75ea4f76
 
 COCOAPODS: 1.11.3

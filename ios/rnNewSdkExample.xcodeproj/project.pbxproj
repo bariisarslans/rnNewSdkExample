@@ -14,6 +14,11 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-rnNewSdkExample-rnNewSdkExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-rnNewSdkExample-rnNewSdkExampleTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8B064E592A1F6F9E00055E05 /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B064E582A1F6F9E00055E05 /* Empty.swift */; };
+		8B064E622A1F70B600055E05 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B064E612A1F70B600055E05 /* NotificationService.m */; };
+		8B064E662A1F70B600055E05 /* RelatedDigitalNotificationService.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8B064E5E2A1F70B600055E05 /* RelatedDigitalNotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8B064E6D2A1F717E00055E05 /* RelatedDigitalNotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B064E6C2A1F717E00055E05 /* RelatedDigitalNotificationService.swift */; };
+		F882318AF1526B2EB48B4BC0 /* libPods-RelatedDigitalNotificationService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A17991B44B716E28C21897A /* libPods-RelatedDigitalNotificationService.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +29,28 @@
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = rnNewSdkExample;
 		};
+		8B064E642A1F70B600055E05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B064E5D2A1F70B600055E05;
+			remoteInfo = RelatedDigitalNotificationService;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8B064E6A2A1F70B600055E05 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8B064E662A1F70B600055E05 /* RelatedDigitalNotificationService.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		00E356EE1AD99517003FC87E /* rnNewSdkExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rnNewSdkExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,13 +62,24 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = rnNewSdkExample/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = rnNewSdkExample/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = rnNewSdkExample/main.m; sourceTree = "<group>"; };
+		1429CE11BCEDB84341A8774A /* Pods-RelatedDigitalNotificationService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RelatedDigitalNotificationService.release.xcconfig"; path = "Target Support Files/Pods-RelatedDigitalNotificationService/Pods-RelatedDigitalNotificationService.release.xcconfig"; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-rnNewSdkExample-rnNewSdkExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rnNewSdkExample-rnNewSdkExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4392A12AC88292D35C810B /* Pods-rnNewSdkExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnNewSdkExample.debug.xcconfig"; path = "Target Support Files/Pods-rnNewSdkExample/Pods-rnNewSdkExample.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-rnNewSdkExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnNewSdkExample.release.xcconfig"; path = "Target Support Files/Pods-rnNewSdkExample/Pods-rnNewSdkExample.release.xcconfig"; sourceTree = "<group>"; };
+		5A17991B44B716E28C21897A /* libPods-RelatedDigitalNotificationService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RelatedDigitalNotificationService.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B7EB9410499542E8C5724F5 /* Pods-rnNewSdkExample-rnNewSdkExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnNewSdkExample-rnNewSdkExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-rnNewSdkExample-rnNewSdkExampleTests/Pods-rnNewSdkExample-rnNewSdkExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-rnNewSdkExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rnNewSdkExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = rnNewSdkExample/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-rnNewSdkExample-rnNewSdkExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnNewSdkExample-rnNewSdkExampleTests.release.xcconfig"; path = "Target Support Files/Pods-rnNewSdkExample-rnNewSdkExampleTests/Pods-rnNewSdkExample-rnNewSdkExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		8B064E572A1F6F9D00055E05 /* rnNewSdkExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rnNewSdkExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		8B064E582A1F6F9E00055E05 /* Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty.swift; sourceTree = "<group>"; };
+		8B064E5E2A1F70B600055E05 /* RelatedDigitalNotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RelatedDigitalNotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B064E602A1F70B600055E05 /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
+		8B064E612A1F70B600055E05 /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
+		8B064E632A1F70B600055E05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B064E6B2A1F717D00055E05 /* RelatedDigitalNotificationService-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RelatedDigitalNotificationService-Bridging-Header.h"; sourceTree = "<group>"; };
+		8B064E6C2A1F717E00055E05 /* RelatedDigitalNotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelatedDigitalNotificationService.swift; sourceTree = "<group>"; };
+		AC5684D9D18B17B43D58A9F6 /* Pods-RelatedDigitalNotificationService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RelatedDigitalNotificationService.debug.xcconfig"; path = "Target Support Files/Pods-RelatedDigitalNotificationService/Pods-RelatedDigitalNotificationService.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -60,6 +97,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C80B921A6F3F58F76C31292 /* libPods-rnNewSdkExample.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B064E5B2A1F70B600055E05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F882318AF1526B2EB48B4BC0 /* libPods-RelatedDigitalNotificationService.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +137,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				8B064E582A1F6F9E00055E05 /* Empty.swift */,
+				8B064E572A1F6F9D00055E05 /* rnNewSdkExample-Bridging-Header.h */,
 			);
 			name = rnNewSdkExample;
 			sourceTree = "<group>";
@@ -102,6 +149,7 @@
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				5DCACB8F33CDC322A6C60F78 /* libPods-rnNewSdkExample.a */,
 				19F6CBCC0A4E27FBF8BF4A61 /* libPods-rnNewSdkExample-rnNewSdkExampleTests.a */,
+				5A17991B44B716E28C21897A /* libPods-RelatedDigitalNotificationService.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -119,6 +167,7 @@
 				13B07FAE1A68108700A75B9A /* rnNewSdkExample */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* rnNewSdkExampleTests */,
+				8B064E5F2A1F70B600055E05 /* RelatedDigitalNotificationService */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
@@ -133,8 +182,21 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* rnNewSdkExample.app */,
 				00E356EE1AD99517003FC87E /* rnNewSdkExampleTests.xctest */,
+				8B064E5E2A1F70B600055E05 /* RelatedDigitalNotificationService.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		8B064E5F2A1F70B600055E05 /* RelatedDigitalNotificationService */ = {
+			isa = PBXGroup;
+			children = (
+				8B064E602A1F70B600055E05 /* NotificationService.h */,
+				8B064E612A1F70B600055E05 /* NotificationService.m */,
+				8B064E632A1F70B600055E05 /* Info.plist */,
+				8B064E6C2A1F717E00055E05 /* RelatedDigitalNotificationService.swift */,
+				8B064E6B2A1F717D00055E05 /* RelatedDigitalNotificationService-Bridging-Header.h */,
+			);
+			path = RelatedDigitalNotificationService;
 			sourceTree = "<group>";
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
@@ -144,6 +206,8 @@
 				5709B34CF0A7D63546082F79 /* Pods-rnNewSdkExample.release.xcconfig */,
 				5B7EB9410499542E8C5724F5 /* Pods-rnNewSdkExample-rnNewSdkExampleTests.debug.xcconfig */,
 				89C6BE57DB24E9ADA2F236DE /* Pods-rnNewSdkExample-rnNewSdkExampleTests.release.xcconfig */,
+				AC5684D9D18B17B43D58A9F6 /* Pods-RelatedDigitalNotificationService.debug.xcconfig */,
+				1429CE11BCEDB84341A8774A /* Pods-RelatedDigitalNotificationService.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -184,15 +248,36 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
 				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				8B064E6A2A1F70B600055E05 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8B064E652A1F70B600055E05 /* PBXTargetDependency */,
 			);
 			name = rnNewSdkExample;
 			productName = rnNewSdkExample;
 			productReference = 13B07F961A680F5B00A75B9A /* rnNewSdkExample.app */;
 			productType = "com.apple.product-type.application";
+		};
+		8B064E5D2A1F70B600055E05 /* RelatedDigitalNotificationService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B064E672A1F70B600055E05 /* Build configuration list for PBXNativeTarget "RelatedDigitalNotificationService" */;
+			buildPhases = (
+				00EBCB5EB111B8906972E949 /* [CP] Check Pods Manifest.lock */,
+				8B064E5A2A1F70B600055E05 /* Sources */,
+				8B064E5B2A1F70B600055E05 /* Frameworks */,
+				8B064E5C2A1F70B600055E05 /* Resources */,
+				BFB15575BAE1DF9DD75BB3CA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RelatedDigitalNotificationService;
+			productName = RelatedDigitalNotificationService;
+			productReference = 8B064E5E2A1F70B600055E05 /* RelatedDigitalNotificationService.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -207,7 +292,11 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1420;
+					};
+					8B064E5D2A1F70B600055E05 = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -226,6 +315,7 @@
 			targets = (
 				13B07F861A680F5B00A75B9A /* rnNewSdkExample */,
 				00E356ED1AD99517003FC87E /* rnNewSdkExampleTests */,
+				8B064E5D2A1F70B600055E05 /* RelatedDigitalNotificationService */,
 			);
 		};
 /* End PBXProject section */
@@ -247,6 +337,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8B064E5C2A1F70B600055E05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -265,6 +362,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+		};
+		00EBCB5EB111B8906972E949 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RelatedDigitalNotificationService-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -303,6 +422,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFB15575BAE1DF9DD75BB3CA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RelatedDigitalNotificationService/Pods-RelatedDigitalNotificationService-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RelatedDigitalNotificationService/Pods-RelatedDigitalNotificationService-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RelatedDigitalNotificationService/Pods-RelatedDigitalNotificationService-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
@@ -414,6 +550,16 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				8B064E592A1F6F9E00055E05 /* Empty.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B064E5A2A1F70B600055E05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B064E622A1F70B600055E05 /* NotificationService.m in Sources */,
+				8B064E6D2A1F717E00055E05 /* RelatedDigitalNotificationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +571,11 @@
 			target = 13B07F861A680F5B00A75B9A /* rnNewSdkExample */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
+		8B064E652A1F70B600055E05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B064E5D2A1F70B600055E05 /* RelatedDigitalNotificationService */;
+			targetProxy = 8B064E642A1F70B600055E05 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -432,6 +583,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-rnNewSdkExample-rnNewSdkExampleTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -459,6 +611,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-rnNewSdkExample-rnNewSdkExampleTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = rnNewSdkExampleTests/Info.plist;
@@ -483,6 +636,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-rnNewSdkExample.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -499,6 +653,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = rnNewSdkExample;
+				SWIFT_OBJC_BRIDGING_HEADER = "rnNewSdkExample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -509,6 +664,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-rnNewSdkExample.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -524,6 +680,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = rnNewSdkExample;
+				SWIFT_OBJC_BRIDGING_HEADER = "rnNewSdkExample-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -666,6 +823,83 @@
 			};
 			name = Release;
 		};
+		8B064E682A1F70B600055E05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC5684D9D18B17B43D58A9F6 /* Pods-RelatedDigitalNotificationService.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RelatedDigitalNotificationService/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RelatedDigitalNotificationService;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.rnNewSdkExample.RelatedDigitalNotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RelatedDigitalNotificationService/RelatedDigitalNotificationService-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8B064E692A1F70B600055E05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1429CE11BCEDB84341A8774A /* Pods-RelatedDigitalNotificationService.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RelatedDigitalNotificationService/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RelatedDigitalNotificationService;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.rnNewSdkExample.RelatedDigitalNotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RelatedDigitalNotificationService/RelatedDigitalNotificationService-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -692,6 +926,15 @@
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
 				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B064E672A1F70B600055E05 /* Build configuration list for PBXNativeTarget "RelatedDigitalNotificationService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B064E682A1F70B600055E05 /* Debug */,
+				8B064E692A1F70B600055E05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
